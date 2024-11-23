@@ -38,5 +38,6 @@
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
   },
-  "repository": "https://github.com/federicoscutariu/motivator-3000-vscode-extension"
+  "repository": "https://github.com/federicoscutariu/motivator-3000-vscode-extension",
+  "publisher": "federicoscutariu"
 }
