@@ -1,0 +1,41 @@
+{
+  "name": "motivator-3000",
+  "displayName": "Motivator 3000",
+  "description": "Motivate yourself with this extension! Receive encouraging messages like \"You can do it!\"",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Motivator 3000",
+      "properties": {
+        "motivator.interval": {
+          "type": "integer",
+          "default": 5000,
+          "description": "Message interval time in milliseconds."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "eslint": "^9.13.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
